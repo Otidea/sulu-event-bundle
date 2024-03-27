@@ -1,0 +1,5 @@
+otd_sulu_events_api:
+  type: rest
+  resource: otd_sulu_event.event_controller
+  prefix: /admin/api
+  name_prefix: otd_sulu.

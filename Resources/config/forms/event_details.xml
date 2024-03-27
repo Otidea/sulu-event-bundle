@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<form xmlns="http://schemas.sulu.io/template/template"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/form-1.0.xsd"
+>
+    <key>event_details</key>
+
+    <properties>
+        <property name="customizeWebspaceSettings" type="checkbox" visibleCondition="shadowOn == false">
+            <meta>
+                <title>sulu_article.webspace_settings</title>
+            </meta>
+
+            <params>
+                <param name="label">
+                    <meta>
+                        <title>sulu_article.customize_webspace_settings</title>
+                    </meta>
+                </param>
+                <param name="type" value="toggler"/>
+            </params>
+        </property>
+
+        <!--        <property name="mainWebspace" type="single_select" colspan="6" spaceAfter="6"-->
+        <!--                  disabledCondition="!customizeWebspaceSettings" visibleCondition="shadowOn == false">-->
+        <!--            <meta>-->
+        <!--                <title>sulu_article.main_webspace</title>-->
+        <!--            </meta>-->
+
+        <!--            <params>-->
+        <!--                <param-->
+        <!--                        name="values"-->
+        <!--                        type="expression"-->
+        <!--                        value="service('sulu_article.webspace_select_helper').getValues()"-->
+        <!--                />-->
+        <!--            </params>-->
+        <!--        </property>-->
+
+        <!--        <property name="additionalWebspaces" type="select" colspan="6" spaceAfter="6"-->
+        <!--                  disabledCondition="!customizeWebspaceSettings" visibleCondition="shadowOn == false">-->
+        <!--            <meta>-->
+        <!--                <title>sulu_article.additional_webspace</title>-->
+        <!--            </meta>-->
+
+        <!--            <params>-->
+        <!--                <param-->
+        <!--                        name="values"-->
+        <!--                        type="expression"-->
+        <!--                        value="service('sulu_article.webspace_select_helper').getValues()"-->
+        <!--                />-->
+        <!--            </params>-->
+        <!--        </property>-->
+
+        <property name="name" type="text_line" mandatory="true" colspan="12">
+            <meta>
+                <title>sulu_admin.name</title>
+            </meta>
+            <params>
+                <param name="headline" value="true"/>
+            </params>
+        </property>
+
+        <property name="startDate" type="datetime" mandatory="true" colspan="6">
+            <meta>
+                <title>otd_sulu.start_date</title>
+            </meta>
+        </property>
+
+        <property name="endDate" type="datetime" mandatory="true" colspan="6">
+            <meta>
+                <title>otd_sulu.end_date</title>
+            </meta>
+        </property>
+
+        <section name="changelog">
+            <meta>
+                <title>sulu_page.editing_information</title>
+            </meta>
+            <properties>
+                <property name="created" type="datetime" mandatory="true" colspan="6">
+                    <meta>
+                        <title>sulu_page.authored_date</title>
+                    </meta>
+                </property>
+                <property name="creator" type="single_contact_selection" mandatory="true" colspan="6">
+                    <meta>
+                        <title>sulu_page.author</title>
+                    </meta>
+                </property>
+                <property name="changelog" type="changelog_line">
+                    <meta>
+                        <title>sulu_page.changelog</title>
+                    </meta>
+                </property>
+            </properties>
+        </section>
+    </properties>
+</form>

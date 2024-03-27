@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="Otd\SuluEventBundle\Entity\Event"
+            table="otd_sulu_event"
+            repository-class="Otd\SuluEventBundle\Repository\EventRepository">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="name" type="string" column="name" length="255" unique="true"/>
+        <field name="startDate" type="datetime" column="startDate" nullable="true"/>
+        <field name="endDate" type="datetime" column="endDate" nullable="true"/>
+        <field name="locale" type="string" column="locale" length="4" nullable="true"/>
+    </entity>
+</doctrine-mapping>

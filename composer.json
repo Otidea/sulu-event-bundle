@@ -1,0 +1,67 @@
+{
+  "name": "otd/sulu-event-bundle",
+  "license": "MIT",
+  "description": "Sulu Event Bundle allows to manage events in Sulu CMS",
+  "version": "0.1.0",
+  "type": "sulu-bundle",
+  "keywords": [
+    "sulu",
+    "symfony",
+    "cms",
+    "content-management-system",
+    "php",
+    "event"
+  ],
+  "authors": [
+    {
+      "name": "Steeven THOMAS"
+    },
+    {
+      "name": "Otidea",
+      "homepage": "https://otidea.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "doctrine/collections": "^1.8",
+    "doctrine/orm": "^2.19",
+    "doctrine/persistence": "^2.5",
+    "sulu/sulu": "^2.5",
+    "symfony/config": "^6.3",
+    "symfony/console": "^6.3",
+    "symfony/dependency-injection": "^6.3",
+    "symfony/event-dispatcher": "^6.3",
+    "symfony/event-dispatcher-contracts": "^3",
+    "symfony/translation": "^6.3"
+  },
+  "require-dev": {
+    "doctrine/data-fixtures": "^1.7",
+    "doctrine/doctrine-bundle": "^2.12",
+    "phpunit/phpunit": "^9.5",
+    "symfony/phpunit-bridge": "^6.3",
+    "symfony/dotenv": "^6.3",
+    "symfony/var-dumper": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Otd\\SuluEventBundle\\": ""
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Otd\\SuluEventBundle\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit"
+    ],
+    "phpunit": "vendor/bin/phpunit"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true,
+      "symfony/flex": true
+    }
+  }
+}

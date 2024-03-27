@@ -1,0 +1,13 @@
+{
+  "otd_sulu_event.events": "Évènements",
+  "otd_sulu_event.event": "Évènement",
+  "otd_sulu.start_date": "Date de début",
+  "otd_sulu.end_date": "Date de fin",
+  "otd_sulu.event_already_exists": "L'évènement avec le nom \"{resourceTitle}\" existe déjà.",
+  "otd_sulu_event.agenda": "Agenda",
+  "otd_sulu_event.categories": "Catégories",
+  "sulu_activity.resource.events": "Évènements",
+  "sulu_activity.description.events.created": "{userFullName} a créé l'évènement \"{resourceTitle}\".",
+  "sulu_activity.description.events.modified": "{userFullName} a modifié l'évènement \"{resourceTitle}\".",
+  "sulu_activity.description.events.removed": "{userFullName} a supprimé l'évènement \"{resourceTitle}\"."
+}
